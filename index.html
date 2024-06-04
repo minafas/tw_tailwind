@@ -8,29 +8,30 @@
   <link rel="shortcut icon" href="./public/images/logo.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- make menu  -->
-<div class="menu desktop:w-[100%] desktop:h-[100px] desktop:bg-[#282828] desktop:pt-[40px] desktop:box-border desktop:sticky desktop: left-[0] desktop:top-[0] desktop: z-[2] desktop:flex desktop: justify-center">
   <!-- make menu mobile -->
-  <div class="desktop:hidden">
-    <div class=" menu mobile:w-[100%] mobile:h-[150px] mobile:flex mobile:flex-row mobile:bg-[#282828] mobile:sticky mobile:left-[0] mobile:top-[0] mobile:z-0 mobile:justify-center mobile:items-center">
-    <img class="#" src="./public/images/logo.png" alt="">
-    <label class="mobile:w-[50px] mobile:h-[50px] mobile:text-[red]  mobile:flex cursor-pointer mobile:absolute mobile:top-[50px] mobile:right-[100px]" for="menu_bar">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-    </label>
-    <!-- <input type="checkbox" name="menu" class="peer hidden" id="menu_bar"> -->
+  <div class="menu_icon desktop:hidden sticky top-0 right-0 z-[2]">
+    <label class="w-full h-[100px] bg-[#2b2b2b] flex  items-start mt-[0px] mb-[0px]" for="hamburger_menu">
+      <div class="menu_container flex flex-row flex-wrap my-auto mr-[30px]  " onclick="myFunction(this) ">
+        <div class="bar1 w-[5px] h-[40px] bg-[#e1d9d91d] my-[3px] mx-[5px] duration-[0.4s]"></div>
+        <div class="bar2 w-[5px] h-[40px] bg-[#e1d9d91d] my-[3px] mx-[5px] duration-[0.4s]"></div>
+        <div class="bar3 w-[5px] h-[40px] bg-[#e1d9d91d] my-[3px] mx-[5px] duration-[0.4s]"></div>
     </div>
-    <div class="menu_bar mobile:w-full mobile:h-auto mobile:bg-[#2b2b2b] mobile:hidden mobile:flex-col mobile:items-start mobile:duration-300 mobile:peer_checked:flex">
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">صفحه اصلی</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">شرکت گلستان</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">محصولات</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">وبلاگ</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">قرعه کشی</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">استخدام</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">تماس با ما</a>
-      <a class="menu mobile:text-[white] mobile:font-sans mobile:font-light mobile:text-[16px] mobile:mt-[0] mobile:mr-[30px] mobile:ml-[0] mobile:leading-[20px] " href="#">EN</a>
+    </label>
+    <input type="checkbox" id="hamburger_menu" class=" peer hidden">
+    <div class="menu w-full h-auto bg-[#2b2b2b] hidden mobile:flex-col items-start duration-300 peer-checked:flex">
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">صفحه اصلی</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">شرکت گلستان</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">محصولات</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">وبلاگ</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">قرعه کشی</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">استخدام</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">تماس با ما</a>
+      <a class="text-[white] text-[16px] opacity-60 font-sans font-light leading-[20px] mt-0 mr-[30px] mb-[30px] ml-0" href="#">EN</a>
     </div>
   </div>
    <!-- end menu mobile -->
+    <!-- make menu  -->
+<div class="menu desktop:w-[100%] desktop:h-[100px] desktop:bg-[#282828] desktop:pt-[40px] desktop:box-border desktop:sticky desktop: left-[0] desktop:top-[0] desktop: z-[2] desktop:flex desktop: justify-center">
   <nav class="menu_nav desktop:w-[100%] desktop:h-[inherit] desktop:flex desktop:flex-wrap desktop:flex-row desktop:justify-center desktop:items-center mobile:hidden">
     <div class="menu_nav_logo desktop:absolute desktop: right-[100px] desktop: top-[50px]">
       <img src="./public/images/logo.png" alt="">
@@ -108,7 +109,7 @@
   <div class="persentation desktop:flex desktop:flex-col desktop:flex-wrap desktop: text-justify desktop:mr-[200px] desktop:gap-y-[10px]">
     <h2 class=" desktop:font-IranSans desktop: text-[20px] desktop:text-[#ff0000] desktop:font-[400px] desktop: opacity-80 dark:desktop:text-[white]   mobile:text-[red] mobile:text-[30px] mt-[10px]">قرعه کشی ماهیانه گلستان</h2>
     <h3 class="desktop:font-sans desktop:text-[18px] desktop:text-[#2b2b2b] desktop:opacity-100 desktop:font-bold mobile:text-[20px] mobile:font-bold mobile:opacity-70 ">قرعه‌کشی ماهیانه مصرف‌کنندگان چای گلستان</h3>
-    <h4 class="desktop:w-[400px] desktop:text-[16px] desktop:opacity-50 desktop:font-IranSans desktop:leading-[35px] desktop:text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[20px]">هر یک از مصرف‌کنندگان محصولات چای گلستان می‌توانند با ارسال کد قرعه کشی روی بسته به شماره 30007405 در قرعه کشی‌های ماهیانه سال 1402 شرکت کنند. نگهداری از بسته‌بندی محصول برای اهدای جایزه الزامی است</h4>
+    <h4 class="desktop:w-[80%] desktop:text-[16px] desktop:opacity-50 desktop:font-IranSans desktop:leading-[35px] desktop:text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[14px] mobile:text-justify">هر یک از مصرف‌کنندگان محصولات چای گلستان می‌توانند با ارسال کد قرعه کشی روی بسته به شماره 30007405 در قرعه کشی‌های ماهیانه سال 1402 شرکت کنند. نگهداری از بسته‌بندی محصول برای اهدای جایزه الزامی است</h4>
     <div class="desktop:ml-[200px] mobile:mt-[30px]"><a href="#" class="flex desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] desktop:h-[40px] desktop:text-[#002021] desktop:mt-[30px] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop: border-[1px] desktop:border-[#002021e] border-solid desktop:hover:text-[white] desktop:hover:bg-[red] desktop:dark:text-[black] mobile:hover:bg-[#ff0000] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">اطلاعات بیشتر</a></div>
   </div>
 </div>
@@ -118,16 +119,16 @@
 <!-- make introduction -->
 <div class="introduction desktop:w-[100%] desktop:h-[inherit] desktop:bg-[#ffffff] desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center desktop:border-t-[1px] desktop:border-[#a1a3a3] desktop:border-solid desktop:box-border desktop:dark:bg-[black]">
   <div class="top desktop:w-[700px] desktop:mt-[40px]"><h2 class="desktop:font-sans desktop: text-[25px] desktop:text-[#ff0000] desktop:font-[400px] desktop: opacity-80 desktop:dark:text-[white] mobile:text-[red]">معرفی گلستان</h2>
-    <p class="desktop:w-[100%] desktop:text-[16px] desktop:opacity-60 desktop:font-sans desktop:leading-[35px] desktop:text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[20px] mobile:text-justify">آنچه که امروز با نام مجموعه <span class="desktop:inline-block desktop:text-[#ff0000] mobile:text-[#ff0000]">گلستان</span> می‌شناسیم در سال 1329 بنیان نهاده شد. زمانی که شرکت گلستان فعالیت خود را با بسته‌بندی و توزیع چای پاکتی آغاز کرد. با گذر زمان و رشد اقتصاد کشور، نهال «گلستان» به تدریج تقویت شد و شاخ و برگ گرفت. فعالیت‌های «گلستان» با تهیه، تولید و بسته‌بندی بهترین محصولات غذایی گسترش پیدا کرد. <span class="desktop:inline-block desktop:text-[#ff0000] mobile:text-[#ff0000]">گلستان</span> پس از سال‌ها تلاش همچنان می‌کوشد تا به کمک تجربه‌های اندوخته شده در این سال‌ها کالاهایی قابل اعتماد و با کیفیت تولید نماید.</p>
-    <p class="p2 desktop:font-sans desktop:text-[16px] desktop:text-[#002021] desktop:opacity-60 text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[20px] ">هدفمندی و برنامه‌ریزی موثر، ایمان و عزم راسخ برای دستیابی به اهداف تعیین شده، به کار گیری همکاران مجرب و دلسوز، استفاده از روش های نوین بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی <span class="desktop:inline-block desktop:text-[#ff0000]">شرکت گلستان</span> است.</p>
+    <p class="desktop:w-[100%] desktop:text-[16px] desktop:opacity-60 desktop:font-sans desktop:leading-[35px] desktop:text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[14px] mobile:font-sans mobile:text-justify">آنچه که امروز با نام مجموعه <span class="desktop:inline-block desktop:text-[#ff0000] mobile:text-[#ff0000]">گلستان</span> می‌شناسیم در سال 1329 بنیان نهاده شد. زمانی که شرکت گلستان فعالیت خود را با بسته‌بندی و توزیع چای پاکتی آغاز کرد. با گذر زمان و رشد اقتصاد کشور، نهال «گلستان» به تدریج تقویت شد و شاخ و برگ گرفت. فعالیت‌های «گلستان» با تهیه، تولید و بسته‌بندی بهترین محصولات غذایی گسترش پیدا کرد. <span class="desktop:inline-block desktop:text-[#ff0000] mobile:text-[#ff0000]">گلستان</span> پس از سال‌ها تلاش همچنان می‌کوشد تا به کمک تجربه‌های اندوخته شده در این سال‌ها کالاهایی قابل اعتماد و با کیفیت تولید نماید.</p>
+    <p class="p2 desktop:font-sans desktop:text-[16px] desktop:text-[#002021] desktop:opacity-60 text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[14px] mobile:font-sans ">هدفمندی و برنامه‌ریزی موثر، ایمان و عزم راسخ برای دستیابی به اهداف تعیین شده، به کار گیری همکاران مجرب و دلسوز، استفاده از روش های نوین بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی <span class="desktop:inline-block desktop:text-[#ff0000]">شرکت گلستان</span> است.</p>
   </div>
   <div class="bottom desktop:w-[700px] desktop:pt-[60px]"><h2 class="desktop:font-sans desktop: text-[25px] desktop:text-[#ff0000] desktop:font-[400px] desktop: opacity-80 desktop:dark:text-[white] mobile:text-[red]">محصولات گلستان</h2>
-  <p class="desktop:font-sans desktop:text-[16px] desktop:text-[#002021] desktop:opacity-70 text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[20px]"><span class="desktop:inline-block desktop:text-[#ff0000] mobile:text-[#ff0000]  ">نام تجاری گلستان</span> قدمتی به اندازه عمر شرکت گلستان دارد. گلستان ممتازترین محصولات خود را با این نام تجاری عرضه می‌کند. مصرف‌کنندگان محصولات گلستان همواره از این نام تجاری خاطره محصولاتی ممتاز و منحصر بفرد دارند و با اطمینان از نهایت کیفیت این نام تجاری حمایت می‌کنند.</p></div>
+  <p class="desktop:font-sans desktop:text-[16px] desktop:text-[#002021] desktop:opacity-70 text-justify desktop:dark:text-[white] mobile:w-[100%] opacity-60 mobile:text-[14px] mobile:font-sans mobile:text-justify"><span class="desktop:inline-block desktop:text-[#ff0000] mobile:text-[#ff0000]  ">نام تجاری گلستان</span> قدمتی به اندازه عمر شرکت گلستان دارد. گلستان ممتازترین محصولات خود را با این نام تجاری عرضه می‌کند. مصرف‌کنندگان محصولات گلستان همواره از این نام تجاری خاطره محصولاتی ممتاز و منحصر بفرد دارند و با اطمینان از نهایت کیفیت این نام تجاری حمایت می‌کنند.</p></div>
   <div class="introduction__company desktop:w-[80%] desktop:flex flex-row desktop:flex-wrap desktop:justify-center desktop:gap-x-[20px] desktop:mt-[50px] mobile:flex mobile:flex-wrap mobile:mt-[20px] mobile:justify-center">
-    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center "><img class="" src="./public/images/human.png" alt=""><span class="desktop:text-justify desktop:text-[15px]">سرمایه انسانی</span></div>
-    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/sale.png" alt=""><span class="desktop:text-justify desktop:text-[15px]" >مراكز فروش</span></div>
-    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/product.png" alt=""><span class="desktop:text-justify desktop:text-[15px]">محصولات گلستان</span></div>
-    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/summery.png" alt=""><span class="desktop:text-justify desktop:text-[15px] ">مشتریان گلستان</span></div>
+    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center "><img class="" src="./public/images/human.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center">سرمایه انسانی</span></div>
+    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center"><img src="./public/images/sale.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:items-center mobile:text-justify" >مراكز فروش</span></div>
+    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/product.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center">محصولات گلستان</span></div>
+    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/summery.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center ">مشتریان گلستان</span></div>
   </div>
   </div>
 <!-- end introduction -->
@@ -142,7 +143,7 @@
   </div>
   <div class="rice__introduction desktop:w-[100%] desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center mt-[60px] ">
     <h3 class="desktop:w-[700px] desktop:font-sans desktop:text-[crimson] desktop:text-[25px] desktop:opacity-70 desktop:justify-start mobile:text-[red] mobile:text-[20px]">رکن اول غذای ایرانی</h3>
-    <p class="desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[20px]">مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت شده، پس از كنترل كیفیت در آزمایشگاه‌های تخصصی گلستان وارد چرخه بسته‌بندی و در وزن‌های مختلف به بازار عرضه می‌شوند. عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است چرا كه مشتریان گلستان؛‌ لایق بهترین‌ها هستند.</p>
+    <p class="desktop:w-[100%] desktop:h-[150px] desktop:pt-[5px] desktop:text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px] mobile:text-justify mobile:font-sans">مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت شده، پس از كنترل كیفیت در آزمایشگاه‌های تخصصی گلستان وارد چرخه بسته‌بندی و در وزن‌های مختلف به بازار عرضه می‌شوند. عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است چرا كه مشتریان گلستان؛‌ لایق بهترین‌ها هستند.</p>
     <div class="rice__description desktop:flex desktop:w-[700px] desktop:mr-[100px] gap-x-[10px] mobile:flex mobile:flex-row mobile:w-[300px]"><a href="#" class="desktop:flex desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] desktop:h-[40px] desktop:text-[#002021] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop:border-[1px] desktop:border-[#002021e] border-solid desktop:hover:bg-[crimson] desktop:hover:text-[white] desktop:mt-[40px] mobile:hover:bg-[#ff0000] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">محصولات برنج</a>
       <a href="#" class="desktop:flex
      desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] desktop:h-[40px] desktop:text-[#002021] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop:border-[1px] desktop:border-[#002021e] desktop:border-solid desktop:hover:bg-[crimson] desktop:hover:text-[white] desktop:mt-[40px] mobile:hover:bg-[#ff0000] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">آشپزخانه گلستان</a></div>
@@ -160,8 +161,8 @@ desktop:pb-[20px] desktop:relative mobile:mt-[30px] desktop:dark:bg-[black]">
   </div>
   <div class="tea__introduction desktop:w-[100%] desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center mt-[60px]">
     <h3 class="desktop:w-[700px] desktop:font-sans desktop:text-[crimson] desktop:text-[25px] desktop:opacity-70 desktop:justify-start mobile:text-[red] mobile:text-[20px]">سابقه‌ای به قدمت یک عمر</h3>
-    <p class="p1 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[20px]" >چای تنها یك نوشیدنی گرم نیست.‌ یک گفتمان است؛‌ گرمابخش وجود و بهانه‌ای برای آغاز یك معاشرت دل‌چسب. بی‌دلیل نیست كه نام «محبوب‌ترین نوشیدنی دنیا» را با خود یدک می‌كشد. نوشیدنش خستگی‌ها را فراری داده،‌ حس خوب آرامش را به همراه دارد.</p>
-    <p class="p2 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[20px]">رای مردمان ایران زمین <span class="desktop:text-[crimson] mobile:text-[red]">نام گلستان</span> با چای پیوند خورده است؛‌ قدیمی‌ترین محصول مجموعه گلستان،‌ با مدرن‌ترین و بهداشتی‌ترین دستگاه‌های روز دنیا تهیه و بسته‌بندی می‌شود. چیزی كه باعث شده مشتریانش یك عمر به نام گلستان اعتماد كنند، كیفیت، ‌عطر و طعم به یادماندنی آن است.</p>
+    <p class="p1 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px]" >چای تنها یك نوشیدنی گرم نیست.‌ یک گفتمان است؛‌ گرمابخش وجود و بهانه‌ای برای آغاز یك معاشرت دل‌چسب. بی‌دلیل نیست كه نام «محبوب‌ترین نوشیدنی دنیا» را با خود یدک می‌كشد. نوشیدنش خستگی‌ها را فراری داده،‌ حس خوب آرامش را به همراه دارد.</p>
+    <p class="p2 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px]">رای مردمان ایران زمین <span class="desktop:text-[crimson] mobile:text-[red]">نام گلستان</span> با چای پیوند خورده است؛‌ قدیمی‌ترین محصول مجموعه گلستان،‌ با مدرن‌ترین و بهداشتی‌ترین دستگاه‌های روز دنیا تهیه و بسته‌بندی می‌شود. چیزی كه باعث شده مشتریانش یك عمر به نام گلستان اعتماد كنند، كیفیت، ‌عطر و طعم به یادماندنی آن است.</p>
     <div class="tea__description mobile:hidden"><a href="" class="desktop:flex desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] h-[40px] text-[#002021] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop: border-[1px] desktop:border-[#002021e] border-solid desktop:hover:bg-]crimson desktop:hover:text-[red]">محصولات چای</a></div>
 </div>
 <!-- end tea -->
@@ -177,14 +178,14 @@ desktop:flex-wrap desktop:pr-[10px] desktop:rounded-[3px] desktop:absolute deskt
 </div>
 <div class="pistachio__introduction desktop:w-[100%] desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center mt-[60px]">
   <h3 class="desktop:w-[700px] desktop:font-sans desktop:text-[crimson] desktop:text-[25px] desktop:opacity-70 desktop:justify-start mobile:text-[red] mobile:text-[20px]">آجيل‌های خوش خنده</h3>
-  <p class="p1 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[20px]">خواص فوق‌العاده پسته بر كسی پوشیده نیست. پسته را منبع ویتامین و مواد معدنی می‌نامند، یك پمپ خون‌ساز قوی و تسكین دهنده قلب و اعصاب.</p>
-  <p class="p2 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[20px]"><span class="desktop:text-[crimson] mobile:text-red">پسته گلستان</span> اما حسابش از دیگر پسته‌های بازار جداست. مرغوب‌ترین پسته خام از بهترین باغ‌های پسته ایران دستچین می‌شود.‌پس از كنترل كیفیت در آزمایشگاه و اطمینان از سلامت محصول،‌ با زعفران درجه یک و نمک، بوداده و برشته شده و‌ پسته گلستان را با طعم و رنگ و عطری بی‌نظیر به ارمغان می‌آورد.</p>
+  <p class="p1 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px]">خواص فوق‌العاده پسته بر كسی پوشیده نیست. پسته را منبع ویتامین و مواد معدنی می‌نامند، یك پمپ خون‌ساز قوی و تسكین دهنده قلب و اعصاب.</p>
+  <p class="p2 desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px]"><span class="desktop:text-[crimson] mobile:text-red">پسته گلستان</span> اما حسابش از دیگر پسته‌های بازار جداست. مرغوب‌ترین پسته خام از بهترین باغ‌های پسته ایران دستچین می‌شود.‌پس از كنترل كیفیت در آزمایشگاه و اطمینان از سلامت محصول،‌ با زعفران درجه یک و نمک، بوداده و برشته شده و‌ پسته گلستان را با طعم و رنگ و عطری بی‌نظیر به ارمغان می‌آورد.</p>
   <div class="pistachio__description desktop:flex desktop:w-[700px] desktop:mr-[100px]  desktop:gap-x-[10px]"><a href="" class="desktop:flex desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] h-[40px] text-[#002021] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop: border-[1px] desktop:border-[#002021e] border-solid desktop:hover:bg-]crimson desktop:hover:text-[white] desktop:hover:bg-[red] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">ناتس گلستان</a></div>
 </div>
 </div>
 <!-- end pistachio -->
 <!-- make element -->
-<div class="element desktop:w-[100%] desktop:h-[200px] desktop:bg-[url(./../public/images/background.png)] mobile:w-[100%] mobile:h-[100px] mobile:bg-[url(./../../images/background.png)]"></div>
+<div class="element desktop:w-[100%] desktop:h-[200px] desktop:bg-[url('./public/images/background.png')] mobile:w-[100%] mobile:h-[100px] mobile:bg-[url[url('./public/images/background.png')]]"></div>
 <!-- end element -->
 <!-- make magazin -->
 <div class="magazin desktop:flex desktop:flex-row desktop:flex-wrap desktop:w-[100%] desktop:bg-[#cde4b0] desktop:dark:bg-[black]">
@@ -241,7 +242,7 @@ desktop:flex-wrap desktop:pr-[10px] desktop:rounded-[3px] desktop:absolute deskt
 
 <div class="Responsibility__bottom desktop:w-[100%] desktop:h-[450px] desktop:bg-[whitesmoke] desktop:flex desktop:flex-col desktop: flex-wrap desktop:justify-center desktop:items-center desktop:mt-[30px] desktop:dark:bg-[black]">
   <h2 class="desktop:text-[red] desktop:w-[600px] desktop:font-sans desktop:text-[20px] desktop:text-right mt-[20px] mobile:text-[red] mobile:font-bold mobile:mb-[10px]">مسئوليت‌های اجتماعی گلستان</h2>
-  <p class="desktop:w-[600px] desktop: text-justify desktop:font-sans desktop:dark:text-[white] desktop:opacity-70 mobile:opacity-70 mobile:text-[20px] mobile:mb-[29px]">كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین، قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری فراتر از درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و امکاناتشان برای حل مشكلات جامعه و محیط زندگی خود استفاده كنند. <span class="text-[red]">گلستان</span> در فعالیت‌های‌ اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های عام‌المنفعه را در دستوركار خود قرار داده است.</p>
+  <p class="desktop:w-[600px] desktop: text-justify desktop:font-sans desktop:dark:text-[white] desktop:opacity-70 mobile:opacity-70 mobile:text-[14px] mobile:mb-[29px]">كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین، قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری فراتر از درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و امکاناتشان برای حل مشكلات جامعه و محیط زندگی خود استفاده كنند. <span class="text-[red]">گلستان</span> در فعالیت‌های‌ اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های عام‌المنفعه را در دستوركار خود قرار داده است.</p>
   <div class="Responsibility__extra desktop:w-[600px]"><a href="" class="desktop:w-[150px] desktop:h-[40px] desktop:flex desktop:justify-center desktop:font-sans desktop:bg-[#ffffff] desktop:rounded-[5px] desktop:text-center desktop:leading-[40px] desktop: mt-[20px] desktop:hover:bg-[red] mobile:hover:bg-[#ff0000] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">اطلاعات بیشتر</a></div>
 </div>
 </div>
@@ -262,38 +263,42 @@ desktop:flex-wrap desktop:pr-[10px] desktop:rounded-[3px] desktop:absolute deskt
   <div class="golestan_tea  desktop: w-[150px] desktop:h-[300px] desktop: flex desktop:flex-wrap desktop: flex-col desktop: leading-[30px] desktop:text-[whitesmoke] desktop:justify-center mobile:w-[150px] mobile:h-[300px] mobile:flex mobile:flex-wrap mobile:flex-col mobile:leading-[30px] mobile:text-[whitesmoke] mobile:justify-center mobile:mx-auto ">
     <img src="./public/images/tea.png" alt="">
     <h3 class="desktop:w-[150px] desktop:inline-block desktop:text-[whitesmoke] desktop:font-sans desktop:text-[16px] desktop:opacity-90  desktop:border-[#54585C] desktop:border-t-[2px] desktop:border-b-[2px] desktop:text-center desktop:mt-[20px] mobile:inline-block mobile:text-[whitesmoke] mobile:font-sans mobile:text-[16px] mobile:opacity-90  mobile:border-[#54585C] mobile:border-t-[2px] mobile:border-b-[2px] mobile:text-center mobile:mt-[20px]">چای گلستان</h3>
+   <div class="desktop:flex desktop:flex-col desktop:justify-center">
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">چای ممتاز هندوستان</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60" href="#">چای ممتاز ارل گری</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60" href="#">چای سیلان عطری</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60" href="#">چای ممتاز سیلان</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60" href="#">چای صبحانه گلستان</a>
+   </div>
   </div>
   <div class="golestan_tea_bag w-[300px] desktop:h-[300px] desktop: flex desktop:flex-wrap desktop: flex-col desktop:items-center desktop: leading-[30px] desktop:text-[whitesmoke] mobile:w-[150px] mobile:h-[300px] mobile:flex mobile:flex-wrap mobile:flex-col mobile:leading-[30px] mobile:text-[whitesmoke] mobile:justify-center mobile:mx-auto">
     <img src="./public/images/tea_bak.png" alt="">
     <h3 class="desktop:w-[150px] desktop:inline-block desktop:text-[whitesmoke] desktop:font-sans text-[16px] desktop:opacity-90  desktop:border-[#54585C] desktop:border-t-[2px] desktop:border-b-[2px] desktop:text-center desktop:mt-[20px] mobile:inline-block mobile:text-[whitesmoke] mobile:font-sans mobile:text-[16px] mobile:opacity-90  mobile:border-[#54585C] mobile:border-t-[2px] mobile:border-b-[2px] mobile:text-center mobile:mt-[20px]">تی بگ گلستان</h3>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">تی بک بلاک لاین</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">تی بک ارل گری</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">دمنوش نعناع</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">دمنوش بابونه</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">دمنوش چای سبز</a>
+    <div class="desktop:flex desktop:flex-col desktop:justify-center"><a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">تی بک بلاک لاین</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">تی بک ارل گری</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">دمنوش نعناع</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">دمنوش بابونه</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">دمنوش چای سبز</a></div>
   </div>
   <div class="golestan_spice w-[300px] desktop:h-[300px] desktop: flex desktop:flex-wrap desktop: flex-col desktop:items-center desktop:leading-[30px] desktop:text-[whitesmoke] mobile:w-[150px] mobile:h-[300px] mobile:flex mobile:flex-wrap mobile:flex-col mobile:leading-[30px] mobile:text-[whitesmoke] mobile:justify-center mobile:mx-auto">
     <img src="./public/images/spice.png" alt="">
     <h3 class="desktop:w-[150px] desktop:inline-block desktop:text-[whitesmoke] desktop:font-sans text-[16px] desktop:opacity-90  desktop:border-[#54585C] desktop:border-t-[2px] desktop:border-b-[2px] desktop:text-center desktop:mt-[20px] mobile:inline-block mobile:text-[whitesmoke] mobile:font-sans mobile:text-[16px] mobile:opacity-90  mobile:border-[#54585C] mobile:border-t-[2px] mobile:border-b-[2px] mobile:text-center mobile:mt-[20px]">ادویه گلستان</h3>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">زعفران ممتاز خراسان</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">ادویه کاری</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">ادویه ماست و خیار</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">فلفل سیاه خالص</a>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">زردچوبه ممتاز</a>
+    <div class="desktop:flex desktop:flex-col desktop:justify-center"><a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">زعفران ممتاز خراسان</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">ادویه کاری</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">ادویه ماست و خیار</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">فلفل سیاه خالص</a>
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="">زردچوبه ممتاز</a></div>
   </div>
   <div class="golestan_beans w-[300px] desktop:h-[300px] desktop: flex desktop:flex-wrap desktop: flex-col desktop:items-center desktop: leading-[30px] desktop:text-[whitesmoke] mobile:w-[150px] mobile:h-[300px] mobile:flex mobile:flex-wrap mobile:flex-col mobile:leading-[30px] mobile:text-[whitesmoke] mobile:justify-center mobile:mx-auto">
     <img src="./public/images/peans.png" alt="">
     <h3 class="desktop:w-[150px] desktop:inline-block desktop:text-[whitesmoke] desktop:font-sans desktop:text-[16px] desktop:opacity-90 desktop:border-[#54585C] desktop:border-t-[2px] desktop:border-b-[2px] desktop:text-center desktop:mt-[20px] mobile:inline-block mobile:text-[whitesmoke] mobile:font-sans mobile:text-[16px] mobile:opacity-90  mobile:border-[#54585C] mobile:border-t-[2px] mobile:border-b-[2px] mobile:text-center mobile:mt-[20px]">حبوبات گلستان</h3>
-    <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60" href="#">لوبیا قرمزممتاز</a>
+    <div class="desktop:flex desktop:flex-col desktop:justify-center">
+      <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60" href="#">لوبیا قرمزممتاز</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">لوبیا چیتی گلستان</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">عدسی کانادایی</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">نخودزودپزکرمانشاه</a>
     <a class="desktop:text-[13px] desktop:font-sans desktop:opacity-60 " href="#">لوبیا سفید گلستان</a>
+    </div>
   </div>
 </div>
 <div class="designer desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center desktop:justify-center desktop:mx-auto desktop:mt-[30px] mobile:flex-col mobile:flex-wrap mobile:mx-auto mobile:flex mobile:items-center">
