@@ -9,12 +9,14 @@
 </head>
 <body>
   <!-- make menu mobile -->
-  <div class="menu_icon desktop:hidden sticky top-0 right-0 z-[2]">
-    <label class="w-full h-[100px] bg-[#2b2b2b] flex  items-start mt-[0px] mb-[0px]" for="hamburger_menu">
+  
+  <div class="menu_icon desktop:hidden sticky top-0 right-0 z-[9]">
+    <div class=" desktop:hidden flex flex-row justify-center h-[100px]  bg-[#2b2b2b] sticky top-0 left-0 z-[10]"><img src="./public/images/logo.png" alt=""></div>
+    <label class="w-full h-[80px] bg-[#2b2b2b] flex  items-start mt-[0px] mb-[0px]" for="hamburger_menu">
       <div class="menu_container flex flex-row flex-wrap my-auto mr-[30px]  " onclick="myFunction(this) ">
-        <div class="bar1 w-[5px] h-[40px] bg-[#e1d9d91d] my-[3px] mx-[5px] duration-[0.4s]"></div>
-        <div class="bar2 w-[5px] h-[40px] bg-[#e1d9d91d] my-[3px] mx-[5px] duration-[0.4s]"></div>
-        <div class="bar3 w-[5px] h-[40px] bg-[#e1d9d91d] my-[3px] mx-[5px] duration-[0.4s]"></div>
+        <div class="bar1 w-[5px] h-[40px] bg-[#e1d9d91d] my-[5px] mx-[5px] duration-[0.4s]"></div>
+        <div class="bar2 w-[5px] h-[40px] bg-[#e1d9d91d] my-[5px] mx-[5px] duration-[0.4s]"></div>
+        <div class="bar3 w-[5px] h-[40px] bg-[#e1d9d91d] my-[5px] mx-[5px] duration-[0.4s]"></div>
     </div>
     </label>
     <input type="checkbox" id="hamburger_menu" class=" peer hidden">
@@ -127,8 +129,8 @@
   <div class="introduction__company desktop:w-[80%] desktop:flex flex-row desktop:flex-wrap desktop:justify-center desktop:gap-x-[20px] desktop:mt-[50px] mobile:flex mobile:flex-wrap mobile:mt-[20px] mobile:justify-center">
     <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center "><img class="" src="./public/images/human.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center">سرمایه انسانی</span></div>
     <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center"><img src="./public/images/sale.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:items-center mobile:text-justify" >مراكز فروش</span></div>
-    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/product.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center">محصولات گلستان</span></div>
-    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-justify"><img src="./public/images/summery.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center ">مشتریان گلستان</span></div>
+    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center"><img src="./public/images/product.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center">محصولات گلستان</span></div>
+    <div class="introduction__company__child desktop: w-[200px] desktop:text-center desktop:justify-center mobile:text-center"><img src="./public/images/summery.png" alt=""><span class="desktop:text-justify desktop:text-[15px] mobile:text-center">مشتریان گلستان</span></div>
   </div>
   </div>
 <!-- end introduction -->
@@ -143,7 +145,7 @@
   </div>
   <div class="rice__introduction desktop:w-[100%] desktop:flex desktop:flex-col desktop:flex-wrap desktop:items-center mt-[60px] ">
     <h3 class="desktop:w-[700px] desktop:font-sans desktop:text-[crimson] desktop:text-[25px] desktop:opacity-70 desktop:justify-start mobile:text-[red] mobile:text-[20px]">رکن اول غذای ایرانی</h3>
-    <p class="desktop:w-[100%] desktop:h-[150px] desktop:pt-[5px] desktop:text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px] mobile:text-justify mobile:font-sans">مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت شده، پس از كنترل كیفیت در آزمایشگاه‌های تخصصی گلستان وارد چرخه بسته‌بندی و در وزن‌های مختلف به بازار عرضه می‌شوند. عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است چرا كه مشتریان گلستان؛‌ لایق بهترین‌ها هستند.</p>
+    <p class="desktop:w-[700px] desktop: h-[150px] desktop:pt-[5px] desktop: text-justify desktop:font-sans desktop:opacity-60 desktop:dark:text-[white] mobile:text-[14px]">مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌ طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت شده، پس از كنترل كیفیت در آزمایشگاه‌های تخصصی گلستان وارد چرخه بسته‌بندی و در وزن‌های مختلف به بازار عرضه می‌شوند. عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است چرا كه مشتریان گلستان؛‌ لایق بهترین‌ها هستند.</p>
     <div class="rice__description desktop:flex desktop:w-[700px] desktop:mr-[100px] gap-x-[10px] mobile:flex mobile:flex-row mobile:w-[300px]"><a href="#" class="desktop:flex desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] desktop:h-[40px] desktop:text-[#002021] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop:border-[1px] desktop:border-[#002021e] border-solid desktop:hover:bg-[crimson] desktop:hover:text-[white] desktop:mt-[40px] mobile:hover:bg-[#ff0000] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">محصولات برنج</a>
       <a href="#" class="desktop:flex
      desktop:justify-center desktop:w-[130px] desktop:font-sans desktop:text-[16px] desktop:h-[40px] desktop:text-[#002021] desktop:rounded-[5px] desktop:leading-[40px] desktop:opacity-90 desktop:bg-[#ffffff] desktop:border-[1px] desktop:border-[#002021e] desktop:border-solid desktop:hover:bg-[crimson] desktop:hover:text-[white] desktop:mt-[40px] mobile:hover:bg-[#ff0000] mobile:w-[130px] mobile:h-[40px] mobile:flex mobile:border-[1px] mobile:border-[#0020212e] mobile:border-solid mobile:bg-yellow-50 mobile:justify-center mobile:leading-[40px]">آشپزخانه گلستان</a></div>
